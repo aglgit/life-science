@@ -1,0 +1,730 @@
+;
+; 	OPLS-AA topology, built by TopolGen version 1.1_dev (10/14/2009)
+; 	Script written by: Justin Lemkul (jalemkul@vt.edu)
+; 	This is your molecule's topology
+; 	Check it carefully for any errors. It is not necessarily perfect!
+;
+; 	Topology written on Fri Aug 31 12:14:37 CEST 2018
+;
+; Include force field
+#include "ffoplsaa.itp"
+
+[ moleculetype ]
+; Name            nrexcl
+SOX                 3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+     1   opls_516      1    SO1    CDD      0      0.000   12.01100                             
+     2   opls_135      1    SO2    CBB      0     -0.180   12.01100                             
+     3   opls_135      1    SO3    CCC      0     -0.180   12.01100                             
+     4   opls_137      1    SO4    CAA      0     -0.060   12.01100                             
+     5   opls_140      1    SO4    HAA      0      0.060    1.00800                             
+     6   opls_154      1    SO4     OB      0     -0.683   15.99940                             
+     7   opls_135      1    SO5     CZ      0     -0.180   12.01100                             
+     8   opls_135      1    SO6     CY      0     -0.180   12.01100                             
+     9   opls_137      1    SO7     CW      0     -0.060   12.01100                             
+    10   opls_140      1    SO7     HW      0      0.060    1.00800                             
+    11   opls_135      1    SO8     CX      0     -0.180   12.01100                             
+    12   opls_137      1    SO9     CK      0     -0.060   12.01100                             
+    13   opls_140      1    SO9     HK      0      0.060    1.00800                             
+    14   opls_516      1   SO10     CL      0      0.000   12.01100                             
+    15   opls_516      1   SO11     CM      0      0.000   12.01100                             
+    16   opls_516      1   SO12     CN      0      0.000   12.01100                             
+    17   opls_516      1   SO13     CO      0      0.000   12.01100                             
+    18   opls_516      1   SO14     CP      0      0.000   12.01100                             
+    19   opls_516      1   SO15     CQ      0      0.000   12.01100                             
+    20   opls_145      1   SO16     CR      0      0.000   12.01100                             
+    21   opls_145      1   SO17     CS      0      0.000   12.01100                             
+    22   opls_145      1   SO18     CA      0      0.000   12.01100                             
+    23          1      0     NA      X     14      0.000    0.00000                             
+    24   opls_900      1   SO19     NB      0     -0.900   14.00670                             
+    25   opls_145      1   SO20     CT      0     -0.115   12.01100                             
+    26   opls_236      1   SO20     OA      0     -0.500   15.99940                             
+    27   opls_135      1   SO21     CU      0     -0.180   12.01100                             
+    28          1      0     NC      X      0      0.000    0.00000                             
+    29   opls_516      1   SO22    CEE      0      0.000   12.01100                             
+    30   opls_516      1   SO23    CFF      0      0.000   12.01100                             
+    31   opls_516      1   SO24    CGG      0      0.000   12.01100                             
+    32   opls_516      1   SO25     CB      0      0.000   12.01100                             
+    33   opls_516      1   SO26     CC      0      0.000   12.01100                             
+    34   opls_516      1   SO27     CD      0      0.000   12.01100                             
+    35   opls_516      1   SO28     CE      0      0.000   12.01100                             
+    36   opls_516      1   SO29     CF      0      0.000   12.01100                             
+    37   opls_516      1   SO30     CG      0      0.000   12.01100                             
+    38   opls_135      1   SO31     CH      0     -0.180   12.01100                             
+    39   opls_135      1   SO32     CI      0     -0.180   12.01100                             
+    40   opls_135      1   SO33     CJ      0     -0.180   12.01100                             
+    41   opls_140      1   SO33    HD1      0      0.060    1.00800                             
+    42   opls_140      1   SO33    HD2      0      0.060    1.00800                             
+    43   opls_140      1   SO33    HD3      0      0.060    1.00800                             
+    44   opls_140      1   SO33    HBB      0      0.060    1.00800                             
+    45   opls_140      1   SO33    HC3      0      0.060    1.00800                             
+    46   opls_140      1   SO33    HC4      0      0.060    1.00800                             
+    47   opls_140      1   SO33    HC5      0      0.060    1.00800                             
+    48   opls_140      1   SO33    HOB      0      0.060    1.00800                             
+    49   opls_140      1   SO33    HZ1      0      0.060    1.00800                             
+    50   opls_140      1   SO33    HZ2      0      0.060    1.00800                             
+    51   opls_140      1   SO33    HY1      0      0.060    1.00800                             
+    52   opls_140      1   SO33    HY2      0      0.060    1.00800                             
+    53   opls_140      1   SO33    HX1      0      0.060    1.00800                             
+    54   opls_140      1   SO33    HX2      0      0.060    1.00800                             
+    55   opls_140      1   SO33    HX3      0      0.060    1.00800                             
+    56   opls_140      1   SO33    HL1      0      0.060    1.00800                             
+    57   opls_140      1   SO33    HL2      0      0.060    1.00800                             
+    58   opls_140      1   SO33    HM1      0      0.060    1.00800                             
+    59   opls_140      1   SO33    HM2      0      0.060    1.00800                             
+    60   opls_140      1   SO33     HN      0      0.060    1.00800                             
+    61   opls_140      1   SO33     HO      0      0.060    1.00800                             
+    62   opls_140      1   SO33    HP1      0      0.060    1.00800                             
+    63   opls_140      1   SO33    HP2      0      0.060    1.00800                             
+    64   opls_140      1   SO33    HQ1      0      0.060    1.00800                             
+    65   opls_140      1   SO33    HQ2      0      0.060    1.00800                             
+    66   opls_140      1   SO33     HS      0      0.060    1.00800                             
+    67   opls_140      1   SO33    HNB      0      0.060    1.00800                             
+    68   opls_140      1   SO33    HU1      0      0.060    1.00800                             
+    69   opls_140      1   SO33    HU2      0      0.060    1.00800                             
+    70   opls_140      1   SO33    HE4      0      0.060    1.00800                             
+    71   opls_140      1   SO33    HE5      0      0.060    1.00800                             
+    72   opls_140      1   SO33    HE6      0      0.060    1.00800                             
+    73   opls_140      1   SO33    HF2      0      0.060    1.00800                             
+    74   opls_140      1   SO33    HF3      0      0.060    1.00800                             
+    75   opls_140      1   SO33    HF4      0      0.060    1.00800                             
+    76   opls_140      1   SO33    HG3      0      0.060    1.00800                             
+    77   opls_140      1   SO33    HG4      0      0.060    1.00800                             
+    78   opls_140      1   SO33    HG5      0      0.060    1.00800                             
+    79   opls_140      1   SO33    HB1      0      0.060    1.00800                             
+    80   opls_140      1   SO33    HB2      0      0.060    1.00800                             
+    81   opls_140      1   SO33    HC1      0      0.060    1.00800                             
+    82   opls_140      1   SO33    HC2      0      0.060    1.00800                             
+    83   opls_140      1   SO33    HE1      0      0.060    1.00800                             
+    84   opls_140      1   SO33    HE2      0      0.060    1.00800                             
+    85   opls_140      1   SO33    HE3      0      0.060    1.00800                             
+    86   opls_140      1   SO33     HF      0      0.060    1.00800                             
+    87   opls_140      1   SO33    HG1      0      0.060    1.00800                             
+    88   opls_140      1   SO33    HG2      0      0.060    1.00800                             
+    89   opls_140      1   SO33    HH1      0      0.060    1.00800                             
+    90   opls_140      1   SO33    HH2      0      0.060    1.00800                             
+    91   opls_140      1   SO33    HJ1      0      0.060    1.00800                             
+    92   opls_140      1   SO33    HJ2      0      0.060    1.00800                             
+    93   opls_140      1   SO33    HJ3      0      0.060    1.00800                             
+
+[ bonds ]
+;  ai    aj funct
+    1     2     1	;   CDD   CBB
+    1    41     1	;   CDD   HD1
+    1    42     1	;   CDD   HD2
+    1    43     1	;   CDD   HD3
+    2     3     1	;   CBB   CCC
+    2     4     1	;   CBB   CAA
+    2    44     1	;   CBB   HBB
+    3    45     1	;   CCC   HC3
+    3    46     1	;   CCC   HC4
+    3    47     1	;   CCC   HC5
+    4     5     1	;   CAA   HAA
+    4     6     1	;   CAA    OB
+    4     7     1	;   CAA    CZ
+    6    48     1	;    OB   HOB
+    7     8     1	;    CZ    CY
+    7    49     1	;    CZ   HZ1
+    7    50     1	;    CZ   HZ2
+    8     9     1	;    CY    CW
+    8    51     1	;    CY   HY1
+    8    52     1	;    CY   HY2
+    9    10     1	;    CW    HW
+    9    11     1	;    CW    CX
+    9    12     1	;    CW    CK
+   11    53     1	;    CX   HX1
+   11    54     1	;    CX   HX2
+   11    55     1	;    CX   HX3
+   12    13     1	;    CK    HK
+   12    14     1	;    CK    CL
+   12    39     1	;    CK    CI
+   14    15     1	;    CL    CM
+   14    56     1	;    CL   HL1
+   14    57     1	;    CL   HL2
+   15    16     1	;    CM    CN
+   15    58     1	;    CM   HM1
+   15    59     1	;    CM   HM2
+   16    17     1	;    CN    CO
+   16    39     1	;    CN    CI
+   16    60     1	;    CN    HN
+   17    18     1	;    CO    CP
+   17    36     1	;    CO    CF
+   17    61     1	;    CO    HO
+   18    19     1	;    CP    CQ
+   18    62     1	;    CP   HP1
+   18    63     1	;    CP   HP2
+   19    20     1	;    CQ    CR
+   19    64     1	;    CQ   HQ1
+   19    65     1	;    CQ   HQ2
+   20    21     1	;    CR    CS
+   20    34     1	;    CR    CD
+   21    22     1	;    CS    CA
+   21    66     1	;    CS    HS
+   22    23     1	;    CA    NA
+   22    32     1	;    CA    CB
+   23    24     1	;    NA    NB
+   24    25     1	;    NB    CT
+   24    67     1	;    NB   HNB
+   25    26     1	;    CT    OA
+   25    27     1	;    CT    CU
+   27    28     1	;    CU    NC
+   27    68     1	;    CU   HU1
+   27    69     1	;    CU   HU2
+   28    29     1	;    NC   CEE
+   28    30     1	;    NC   CFF
+   28    31     1	;    NC   CGG
+   29    70     1	;   CEE   HE4
+   29    71     1	;   CEE   HE5
+   29    72     1	;   CEE   HE6
+   30    73     1	;   CFF   HF2
+   30    74     1	;   CFF   HF3
+   30    75     1	;   CFF   HF4
+   31    76     1	;   CGG   HG3
+   31    77     1	;   CGG   HG4
+   31    78     1	;   CGG   HG5
+   32    33     1	;    CB    CC
+   32    79     1	;    CB   HB1
+   32    80     1	;    CB   HB2
+   33    34     1	;    CC    CD
+   33    81     1	;    CC   HC1
+   33    82     1	;    CC   HC2
+   34    35     1	;    CD    CE
+   34    36     1	;    CD    CF
+   35    83     1	;    CE   HE1
+   35    84     1	;    CE   HE2
+   35    85     1	;    CE   HE3
+   36    37     1	;    CF    CG
+   36    86     1	;    CF    HF
+   37    38     1	;    CG    CH
+   37    87     1	;    CG   HG1
+   37    88     1	;    CG   HG2
+   38    39     1	;    CH    CI
+   38    89     1	;    CH   HH1
+   38    90     1	;    CH   HH2
+   39    40     1	;    CI    CJ
+   40    91     1	;    CJ   HJ1
+   40    92     1	;    CJ   HJ2
+   40    93     1	;    CJ   HJ3
+
+[ pairs ]
+;  ai    aj funct
+    1    45     1	;   CBB   HC3
+    1    46     1	;   CBB   HC4
+    1    47     1	;   CBB   HC5
+    1     5     1	;   CBB   HAA
+    1     6     1	;   CBB    OB
+    1     7     1	;   CBB    CZ
+    3     5     1	;   CCC   HAA
+    3     6     1	;   CCC    OB
+    3     7     1	;   CCC    CZ
+    2    48     1	;   CAA   HOB
+    2     8     1	;   CAA    CY
+    2    49     1	;   CAA   HZ1
+    2    50     1	;   CAA   HZ2
+    5    48     1	;   HAA   HOB
+    5     8     1	;   HAA    CY
+    5    49     1	;   HAA   HZ1
+    5    50     1	;   HAA   HZ2
+    6     8     1	;    OB    CY
+    6    49     1	;    OB   HZ1
+    6    50     1	;    OB   HZ2
+    4     9     1	;    CZ    CW
+    4    51     1	;    CZ   HY1
+    4    52     1	;    CZ   HY2
+    7    10     1	;    CY    HW
+    7    11     1	;    CY    CX
+    7    12     1	;    CY    CK
+    8    53     1	;    CW   HX1
+    8    54     1	;    CW   HX2
+    8    55     1	;    CW   HX3
+    8    13     1	;    CW    HK
+    8    14     1	;    CW    CL
+    8    39     1	;    CW    CI
+   10    53     1	;    HW   HX1
+   10    54     1	;    HW   HX2
+   10    55     1	;    HW   HX3
+   10    13     1	;    HW    HK
+   10    14     1	;    HW    CL
+   10    39     1	;    HW    CI
+   11    13     1	;    CX    HK
+   11    14     1	;    CX    CL
+   11    39     1	;    CX    CI
+    9    15     1	;    CK    CM
+    9    56     1	;    CK   HL1
+    9    57     1	;    CK   HL2
+    9    40     1	;    CK    CJ
+   13    15     1	;    HK    CM
+   13    56     1	;    HK   HL1
+   13    57     1	;    HK   HL2
+   13    40     1	;    HK    CJ
+   14    40     1	;    CL    CJ
+   12    16     1	;    CL    CN
+   12    58     1	;    CL   HM1
+   12    59     1	;    CL   HM2
+   12    91     1	;    CI   HJ1
+   12    92     1	;    CI   HJ2
+   12    93     1	;    CI   HJ3
+   14    17     1	;    CM    CO
+   14    39     1	;    CM    CI
+   14    60     1	;    CM    HN
+   15    18     1	;    CN    CP
+   15    36     1	;    CN    CF
+   15    61     1	;    CN    HO
+   15    40     1	;    CN    CJ
+   17    40     1	;    CO    CJ
+   16    19     1	;    CO    CQ
+   16    62     1	;    CO   HP1
+   16    63     1	;    CO   HP2
+   16    37     1	;    CO    CG
+   16    86     1	;    CO    HF
+   16    91     1	;    CI   HJ1
+   16    92     1	;    CI   HJ2
+   16    93     1	;    CI   HJ3
+   18    37     1	;    CP    CG
+   18    86     1	;    CP    HF
+   17    20     1	;    CP    CR
+   17    64     1	;    CP   HQ1
+   17    65     1	;    CP   HQ2
+   17    38     1	;    CF    CH
+   17    87     1	;    CF   HG1
+   17    88     1	;    CF   HG2
+   18    21     1	;    CQ    CS
+   18    34     1	;    CQ    CD
+   19    22     1	;    CR    CA
+   19    66     1	;    CR    HS
+   19    35     1	;    CR    CE
+   19    36     1	;    CR    CF
+   21    35     1	;    CS    CE
+   21    36     1	;    CS    CF
+   20    23     1	;    CS    NA
+   20    32     1	;    CS    CB
+   20    83     1	;    CD   HE1
+   20    84     1	;    CD   HE2
+   20    85     1	;    CD   HE3
+   20    37     1	;    CD    CG
+   20    86     1	;    CD    HF
+   21    24     1	;    CA    NB
+   21    33     1	;    CA    CC
+   21    79     1	;    CA   HB1
+   21    80     1	;    CA   HB2
+   23    33     1	;    NA    CC
+   23    79     1	;    NA   HB1
+   23    80     1	;    NA   HB2
+   22    25     1	;    NA    CT
+   22    67     1	;    NA   HNB
+   22    34     1	;    CB    CD
+   22    81     1	;    CB   HC1
+   22    82     1	;    CB   HC2
+   23    26     1	;    NB    OA
+   23    27     1	;    NB    CU
+   24    28     1	;    CT    NC
+   24    68     1	;    CT   HU1
+   24    69     1	;    CT   HU2
+   26    28     1	;    OA    NC
+   26    68     1	;    OA   HU1
+   26    69     1	;    OA   HU2
+   25    29     1	;    CU   CEE
+   25    30     1	;    CU   CFF
+   25    31     1	;    CU   CGG
+   27    70     1	;    NC   HE4
+   27    71     1	;    NC   HE5
+   27    72     1	;    NC   HE6
+   27    73     1	;    NC   HF2
+   27    74     1	;    NC   HF3
+   27    75     1	;    NC   HF4
+   27    76     1	;    NC   HG3
+   27    77     1	;    NC   HG4
+   27    78     1	;    NC   HG5
+   29    73     1	;   CEE   HF2
+   29    74     1	;   CEE   HF3
+   29    75     1	;   CEE   HF4
+   29    76     1	;   CEE   HG3
+   29    77     1	;   CEE   HG4
+   29    78     1	;   CEE   HG5
+   30    76     1	;   CFF   HG3
+   30    77     1	;   CFF   HG4
+   30    78     1	;   CFF   HG5
+   32    35     1	;    CC    CE
+   32    36     1	;    CC    CF
+   33    83     1	;    CD   HE1
+   33    84     1	;    CD   HE2
+   33    85     1	;    CD   HE3
+   33    37     1	;    CD    CG
+   33    86     1	;    CD    HF
+   35    37     1	;    CE    CG
+   35    86     1	;    CE    HF
+   34    38     1	;    CF    CH
+   34    87     1	;    CF   HG1
+   34    88     1	;    CF   HG2
+   36    39     1	;    CG    CI
+   36    89     1	;    CG   HH1
+   36    90     1	;    CG   HH2
+   37    40     1	;    CH    CJ
+   38    91     1	;    CI   HJ1
+   38    92     1	;    CI   HJ2
+   38    93     1	;    CI   HJ3
+
+[ angles ]
+;  ai    aj    ak funct
+    2     1    41     1	;   CBB   CDD   HD1
+    2     1    42     1	;   CBB   CDD   HD2
+    2     1    43     1	;   CBB   CDD   HD3
+    1     2     3     1	;   CBB   CDD   CCC
+    1     2     4     1	;   CBB   CDD   CAA
+    1     2    44     1	;   CBB   CDD   HBB
+   41     1    42     1	;   HD1   CDD   HD2
+   41     1    43     1	;   HD1   CDD   HD3
+   42     1    43     1	;   HD2   CDD   HD3
+    3     2     4     1	;   CCC   CBB   CAA
+    3     2    44     1	;   CCC   CBB   HBB
+    2     3    45     1	;   CCC   CBB   HC3
+    2     3    46     1	;   CCC   CBB   HC4
+    2     3    47     1	;   CCC   CBB   HC5
+    4     2    44     1	;   CAA   CBB   HBB
+    2     4     5     1	;   CAA   CBB   HAA
+    2     4     6     1	;   CAA   CBB    OB
+    2     4     7     1	;   CAA   CBB    CZ
+   45     3    46     1	;   HC3   CCC   HC4
+   45     3    47     1	;   HC3   CCC   HC5
+   46     3    47     1	;   HC4   CCC   HC5
+    5     4     6     1	;   HAA   CAA    OB
+    5     4     7     1	;   HAA   CAA    CZ
+    6     4     7     1	;    OB   CAA    CZ
+    4     6    48     1	;    OB   CAA   HOB
+    4     7     8     1	;    CZ   CAA    CY
+    4     7    49     1	;    CZ   CAA   HZ1
+    4     7    50     1	;    CZ   CAA   HZ2
+    8     7    49     1	;    CY    CZ   HZ1
+    8     7    50     1	;    CY    CZ   HZ2
+    7     8     9     1	;    CY    CZ    CW
+    7     8    51     1	;    CY    CZ   HY1
+    7     8    52     1	;    CY    CZ   HY2
+   49     7    50     1	;   HZ1    CZ   HZ2
+    9     8    51     1	;    CW    CY   HY1
+    9     8    52     1	;    CW    CY   HY2
+    8     9    10     1	;    CW    CY    HW
+    8     9    11     1	;    CW    CY    CX
+    8     9    12     1	;    CW    CY    CK
+   51     8    52     1	;   HY1    CY   HY2
+   10     9    11     1	;    HW    CW    CX
+   10     9    12     1	;    HW    CW    CK
+   11     9    12     1	;    CX    CW    CK
+    9    11    53     1	;    CX    CW   HX1
+    9    11    54     1	;    CX    CW   HX2
+    9    11    55     1	;    CX    CW   HX3
+    9    12    13     1	;    CK    CW    HK
+    9    12    14     1	;    CK    CW    CL
+    9    12    39     1	;    CK    CW    CI
+   53    11    54     1	;   HX1    CX   HX2
+   53    11    55     1	;   HX1    CX   HX3
+   54    11    55     1	;   HX2    CX   HX3
+   13    12    14     1	;    HK    CK    CL
+   13    12    39     1	;    HK    CK    CI
+   14    12    39     1	;    CL    CK    CI
+   12    14    15     1	;    CL    CK    CM
+   12    14    56     1	;    CL    CK   HL1
+   12    14    57     1	;    CL    CK   HL2
+   12    39    40     1	;    CI    CK    CJ
+   15    14    56     1	;    CM    CL   HL1
+   15    14    57     1	;    CM    CL   HL2
+   14    15    16     1	;    CM    CL    CN
+   14    15    58     1	;    CM    CL   HM1
+   14    15    59     1	;    CM    CL   HM2
+   56    14    57     1	;   HL1    CL   HL2
+   16    15    58     1	;    CN    CM   HM1
+   16    15    59     1	;    CN    CM   HM2
+   15    16    17     1	;    CN    CM    CO
+   15    16    39     1	;    CN    CM    CI
+   15    16    60     1	;    CN    CM    HN
+   58    15    59     1	;   HM1    CM   HM2
+   17    16    39     1	;    CO    CN    CI
+   17    16    60     1	;    CO    CN    HN
+   16    17    18     1	;    CO    CN    CP
+   16    17    36     1	;    CO    CN    CF
+   16    17    61     1	;    CO    CN    HO
+   39    16    60     1	;    CI    CN    HN
+   16    39    40     1	;    CI    CN    CJ
+   18    17    36     1	;    CP    CO    CF
+   18    17    61     1	;    CP    CO    HO
+   17    18    19     1	;    CP    CO    CQ
+   17    18    62     1	;    CP    CO   HP1
+   17    18    63     1	;    CP    CO   HP2
+   36    17    61     1	;    CF    CO    HO
+   17    36    37     1	;    CF    CO    CG
+   17    36    86     1	;    CF    CO    HF
+   19    18    62     1	;    CQ    CP   HP1
+   19    18    63     1	;    CQ    CP   HP2
+   18    19    20     1	;    CQ    CP    CR
+   18    19    64     1	;    CQ    CP   HQ1
+   18    19    65     1	;    CQ    CP   HQ2
+   62    18    63     1	;   HP1    CP   HP2
+   20    19    64     1	;    CR    CQ   HQ1
+   20    19    65     1	;    CR    CQ   HQ2
+   19    20    21     1	;    CR    CQ    CS
+   19    20    34     1	;    CR    CQ    CD
+   64    19    65     1	;   HQ1    CQ   HQ2
+   21    20    34     1	;    CS    CR    CD
+   20    21    22     1	;    CS    CR    CA
+   20    21    66     1	;    CS    CR    HS
+   20    34    35     1	;    CD    CR    CE
+   20    34    36     1	;    CD    CR    CF
+   22    21    66     1	;    CA    CS    HS
+   21    22    23     1	;    CA    CS    NA
+   21    22    32     1	;    CA    CS    CB
+   23    22    32     1	;    NA    CA    CB
+   22    23    24     1	;    NA    CA    NB
+   22    32    33     1	;    CB    CA    CC
+   22    32    79     1	;    CB    CA   HB1
+   22    32    80     1	;    CB    CA   HB2
+   23    24    25     1	;    NB    NA    CT
+   23    24    67     1	;    NB    NA   HNB
+   25    24    67     1	;    CT    NB   HNB
+   24    25    26     1	;    CT    NB    OA
+   24    25    27     1	;    CT    NB    CU
+   26    25    27     1	;    OA    CT    CU
+   25    27    28     1	;    CU    CT    NC
+   25    27    68     1	;    CU    CT   HU1
+   25    27    69     1	;    CU    CT   HU2
+   28    27    68     1	;    NC    CU   HU1
+   28    27    69     1	;    NC    CU   HU2
+   27    28    29     1	;    NC    CU   CEE
+   27    28    30     1	;    NC    CU   CFF
+   27    28    31     1	;    NC    CU   CGG
+   68    27    69     1	;   HU1    CU   HU2
+   29    28    30     1	;   CEE    NC   CFF
+   29    28    31     1	;   CEE    NC   CGG
+   28    29    70     1	;   CEE    NC   HE4
+   28    29    71     1	;   CEE    NC   HE5
+   28    29    72     1	;   CEE    NC   HE6
+   30    28    31     1	;   CFF    NC   CGG
+   28    30    73     1	;   CFF    NC   HF2
+   28    30    74     1	;   CFF    NC   HF3
+   28    30    75     1	;   CFF    NC   HF4
+   28    31    76     1	;   CGG    NC   HG3
+   28    31    77     1	;   CGG    NC   HG4
+   28    31    78     1	;   CGG    NC   HG5
+   70    29    71     1	;   HE4   CEE   HE5
+   70    29    72     1	;   HE4   CEE   HE6
+   71    29    72     1	;   HE5   CEE   HE6
+   73    30    74     1	;   HF2   CFF   HF3
+   73    30    75     1	;   HF2   CFF   HF4
+   74    30    75     1	;   HF3   CFF   HF4
+   76    31    77     1	;   HG3   CGG   HG4
+   76    31    78     1	;   HG3   CGG   HG5
+   77    31    78     1	;   HG4   CGG   HG5
+   33    32    79     1	;    CC    CB   HB1
+   33    32    80     1	;    CC    CB   HB2
+   32    33    34     1	;    CC    CB    CD
+   32    33    81     1	;    CC    CB   HC1
+   32    33    82     1	;    CC    CB   HC2
+   79    32    80     1	;   HB1    CB   HB2
+   34    33    81     1	;    CD    CC   HC1
+   34    33    82     1	;    CD    CC   HC2
+   33    34    35     1	;    CD    CC    CE
+   33    34    36     1	;    CD    CC    CF
+   81    33    82     1	;   HC1    CC   HC2
+   35    34    36     1	;    CE    CD    CF
+   34    35    83     1	;    CE    CD   HE1
+   34    35    84     1	;    CE    CD   HE2
+   34    35    85     1	;    CE    CD   HE3
+   34    36    37     1	;    CF    CD    CG
+   34    36    86     1	;    CF    CD    HF
+   83    35    84     1	;   HE1    CE   HE2
+   83    35    85     1	;   HE1    CE   HE3
+   84    35    85     1	;   HE2    CE   HE3
+   37    36    86     1	;    CG    CF    HF
+   36    37    38     1	;    CG    CF    CH
+   36    37    87     1	;    CG    CF   HG1
+   36    37    88     1	;    CG    CF   HG2
+   38    37    87     1	;    CH    CG   HG1
+   38    37    88     1	;    CH    CG   HG2
+   37    38    39     1	;    CH    CG    CI
+   37    38    89     1	;    CH    CG   HH1
+   37    38    90     1	;    CH    CG   HH2
+   87    37    88     1	;   HG1    CG   HG2
+   39    38    89     1	;    CI    CH   HH1
+   39    38    90     1	;    CI    CH   HH2
+   38    39    40     1	;    CI    CH    CJ
+   89    38    90     1	;   HH1    CH   HH2
+   39    40    91     1	;    CJ    CI   HJ1
+   39    40    92     1	;    CJ    CI   HJ2
+   39    40    93     1	;    CJ    CI   HJ3
+   91    40    92     1	;   HJ1    CJ   HJ2
+   91    40    93     1	;   HJ1    CJ   HJ3
+   92    40    93     1	;   HJ2    CJ   HJ3
+
+[ dihedrals ]
+;  ai    aj    ak    al funct
+    1     2     3    45     3	;   CBB   CDD   CCC   HC3
+    1     2     3    46     3	;   CBB   CDD   CCC   HC4
+    1     2     3    47     3	;   CBB   CDD   CCC   HC5
+    1     2     4     5     3	;   CBB   CDD   CAA   HAA
+    1     2     4     6     3	;   CBB   CDD   CAA    OB
+    1     2     4     7     3	;   CBB   CDD   CAA    CZ
+    3     2     4     5     3	;   CCC   CBB   CAA   HAA
+    3     2     4     6     3	;   CCC   CBB   CAA    OB
+    3     2     4     7     3	;   CCC   CBB   CAA    CZ
+    2     4     6    48     3	;   CAA   CBB    OB   HOB
+    2     4     7     8     3	;   CAA   CBB    CZ    CY
+    2     4     7    49     3	;   CAA   CBB    CZ   HZ1
+    2     4     7    50     3	;   CAA   CBB    CZ   HZ2
+    5     4     6    48     3	;   HAA   CAA    OB   HOB
+    5     4     7     8     3	;   HAA   CAA    CZ    CY
+    5     4     7    49     3	;   HAA   CAA    CZ   HZ1
+    5     4     7    50     3	;   HAA   CAA    CZ   HZ2
+    6     4     7     8     3	;    OB   CAA    CZ    CY
+    6     4     7    49     3	;    OB   CAA    CZ   HZ1
+    6     4     7    50     3	;    OB   CAA    CZ   HZ2
+    4     7     8     9     3	;    CZ   CAA    CY    CW
+    4     7     8    51     3	;    CZ   CAA    CY   HY1
+    4     7     8    52     3	;    CZ   CAA    CY   HY2
+    7     8     9    10     3	;    CY    CZ    CW    HW
+    7     8     9    11     3	;    CY    CZ    CW    CX
+    7     8     9    12     3	;    CY    CZ    CW    CK
+    8     9    11    53     3	;    CW    CY    CX   HX1
+    8     9    11    54     3	;    CW    CY    CX   HX2
+    8     9    11    55     3	;    CW    CY    CX   HX3
+    8     9    12    13     3	;    CW    CY    CK    HK
+    8     9    12    14     3	;    CW    CY    CK    CL
+    8     9    12    39     3	;    CW    CY    CK    CI
+   10     9    11    53     3	;    HW    CW    CX   HX1
+   10     9    11    54     3	;    HW    CW    CX   HX2
+   10     9    11    55     3	;    HW    CW    CX   HX3
+   10     9    12    13     3	;    HW    CW    CK    HK
+   10     9    12    14     3	;    HW    CW    CK    CL
+   10     9    12    39     3	;    HW    CW    CK    CI
+   11     9    12    13     3	;    CX    CW    CK    HK
+   11     9    12    14     3	;    CX    CW    CK    CL
+   11     9    12    39     3	;    CX    CW    CK    CI
+    9    12    14    15     3	;    CK    CW    CL    CM
+    9    12    14    56     3	;    CK    CW    CL   HL1
+    9    12    14    57     3	;    CK    CW    CL   HL2
+    9    12    39    40     3	;    CK    CW    CI    CJ
+   13    12    14    15     3	;    HK    CK    CL    CM
+   13    12    14    56     3	;    HK    CK    CL   HL1
+   13    12    14    57     3	;    HK    CK    CL   HL2
+   13    12    39    40     3	;    HK    CK    CI    CJ
+   14    12    39    40     3	;    CL    CK    CI    CJ
+   12    14    15    16     3	;    CL    CK    CM    CN
+   12    14    15    58     3	;    CL    CK    CM   HM1
+   12    14    15    59     3	;    CL    CK    CM   HM2
+   12    39    40    91     3	;    CI    CK    CJ   HJ1
+   12    39    40    92     3	;    CI    CK    CJ   HJ2
+   12    39    40    93     3	;    CI    CK    CJ   HJ3
+   14    15    16    17     3	;    CM    CL    CN    CO
+   14    15    16    39     3	;    CM    CL    CN    CI
+   14    15    16    60     3	;    CM    CL    CN    HN
+   15    16    17    18     3	;    CN    CM    CO    CP
+   15    16    17    36     3	;    CN    CM    CO    CF
+   15    16    17    61     3	;    CN    CM    CO    HO
+   15    16    39    40     3	;    CN    CM    CI    CJ
+   17    16    39    40     3	;    CO    CN    CI    CJ
+   16    17    18    19     3	;    CO    CN    CP    CQ
+   16    17    18    62     3	;    CO    CN    CP   HP1
+   16    17    18    63     3	;    CO    CN    CP   HP2
+   16    17    36    37     3	;    CO    CN    CF    CG
+   16    17    36    86     3	;    CO    CN    CF    HF
+   16    39    40    91     3	;    CI    CN    CJ   HJ1
+   16    39    40    92     3	;    CI    CN    CJ   HJ2
+   16    39    40    93     3	;    CI    CN    CJ   HJ3
+   18    17    36    37     3	;    CP    CO    CF    CG
+   18    17    36    86     3	;    CP    CO    CF    HF
+   17    18    19    20     3	;    CP    CO    CQ    CR
+   17    18    19    64     3	;    CP    CO    CQ   HQ1
+   17    18    19    65     3	;    CP    CO    CQ   HQ2
+   17    36    37    38     3	;    CF    CO    CG    CH
+   17    36    37    87     3	;    CF    CO    CG   HG1
+   17    36    37    88     3	;    CF    CO    CG   HG2
+   18    19    20    21     3	;    CQ    CP    CR    CS
+   18    19    20    34     3	;    CQ    CP    CR    CD
+   19    20    21    22     3	;    CR    CQ    CS    CA
+   19    20    21    66     3	;    CR    CQ    CS    HS
+   19    20    34    35     3	;    CR    CQ    CD    CE
+   19    20    34    36     3	;    CR    CQ    CD    CF
+   21    20    34    35     3	;    CS    CR    CD    CE
+   21    20    34    36     3	;    CS    CR    CD    CF
+   20    21    22    23     3	;    CS    CR    CA    NA
+   20    21    22    32     3	;    CS    CR    CA    CB
+   20    34    35    83     3	;    CD    CR    CE   HE1
+   20    34    35    84     3	;    CD    CR    CE   HE2
+   20    34    35    85     3	;    CD    CR    CE   HE3
+   20    34    36    37     3	;    CD    CR    CF    CG
+   20    34    36    86     3	;    CD    CR    CF    HF
+   21    22    23    24     3	;    CA    CS    NA    NB
+   21    22    32    33     3	;    CA    CS    CB    CC
+   21    22    32    79     3	;    CA    CS    CB   HB1
+   21    22    32    80     3	;    CA    CS    CB   HB2
+   23    22    32    33     3	;    NA    CA    CB    CC
+   23    22    32    79     3	;    NA    CA    CB   HB1
+   23    22    32    80     3	;    NA    CA    CB   HB2
+   22    23    24    25     3	;    NA    CA    NB    CT
+   22    23    24    67     3	;    NA    CA    NB   HNB
+   22    32    33    34     3	;    CB    CA    CC    CD
+   22    32    33    81     3	;    CB    CA    CC   HC1
+   22    32    33    82     3	;    CB    CA    CC   HC2
+   23    24    25    26     3	;    NB    NA    CT    OA
+   23    24    25    27     3	;    NB    NA    CT    CU
+   24    25    27    28     3	;    CT    NB    CU    NC
+   24    25    27    68     3	;    CT    NB    CU   HU1
+   24    25    27    69     3	;    CT    NB    CU   HU2
+   26    25    27    28     3	;    OA    CT    CU    NC
+   26    25    27    68     3	;    OA    CT    CU   HU1
+   26    25    27    69     3	;    OA    CT    CU   HU2
+   25    27    28    29     3	;    CU    CT    NC   CEE
+   25    27    28    30     3	;    CU    CT    NC   CFF
+   25    27    28    31     3	;    CU    CT    NC   CGG
+   27    28    29    70     3	;    NC    CU   CEE   HE4
+   27    28    29    71     3	;    NC    CU   CEE   HE5
+   27    28    29    72     3	;    NC    CU   CEE   HE6
+   27    28    30    73     3	;    NC    CU   CFF   HF2
+   27    28    30    74     3	;    NC    CU   CFF   HF3
+   27    28    30    75     3	;    NC    CU   CFF   HF4
+   27    28    31    76     3	;    NC    CU   CGG   HG3
+   27    28    31    77     3	;    NC    CU   CGG   HG4
+   27    28    31    78     3	;    NC    CU   CGG   HG5
+   29    28    30    73     3	;   CEE    NC   CFF   HF2
+   29    28    30    74     3	;   CEE    NC   CFF   HF3
+   29    28    30    75     3	;   CEE    NC   CFF   HF4
+   29    28    31    76     3	;   CEE    NC   CGG   HG3
+   29    28    31    77     3	;   CEE    NC   CGG   HG4
+   29    28    31    78     3	;   CEE    NC   CGG   HG5
+   30    28    31    76     3	;   CFF    NC   CGG   HG3
+   30    28    31    77     3	;   CFF    NC   CGG   HG4
+   30    28    31    78     3	;   CFF    NC   CGG   HG5
+   32    33    34    35     3	;    CC    CB    CD    CE
+   32    33    34    36     3	;    CC    CB    CD    CF
+   33    34    35    83     3	;    CD    CC    CE   HE1
+   33    34    35    84     3	;    CD    CC    CE   HE2
+   33    34    35    85     3	;    CD    CC    CE   HE3
+   33    34    36    37     3	;    CD    CC    CF    CG
+   33    34    36    86     3	;    CD    CC    CF    HF
+   35    34    36    37     3	;    CE    CD    CF    CG
+   35    34    36    86     3	;    CE    CD    CF    HF
+   34    36    37    38     3	;    CF    CD    CG    CH
+   34    36    37    87     3	;    CF    CD    CG   HG1
+   34    36    37    88     3	;    CF    CD    CG   HG2
+   36    37    38    39     3	;    CG    CF    CH    CI
+   36    37    38    89     3	;    CG    CF    CH   HH1
+   36    37    38    90     3	;    CG    CF    CH   HH2
+   37    38    39    40     3	;    CH    CG    CI    CJ
+   38    39    40    91     3	;    CI    CH    CJ   HJ1
+   38    39    40    92     3	;    CI    CH    CJ   HJ2
+   38    39    40    93     3	;    CI    CH    CJ   HJ3
+
+[ dihedrals ]
+;  aj    ak    ai    al funct
+   19    21    20    34     1    improper_Z_CA_X_Y	;    CD    CQ    CS    CR
+   20    22    21    66     1    improper_Z_CA_X_Y	;    HS    CR    CA    CS
+   21    23    22    32     1    improper_Z_CA_X_Y	;    CB    CS    NA    CA
+   23    25    24    67     1    improper_Z_N_X_Y	;   HNB    NA    CT    NB
+   24    27    25    26     1    improper_O_C_X_Y	;    CU    NB    OA    CT
+
+[ system ]
+; Name
+SOX topology, generated by TopolGen
+
+[ molecules ]
+; Compound        #mols
+SOX                 1

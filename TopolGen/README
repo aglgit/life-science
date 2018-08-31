@@ -1,0 +1,76 @@
+TopolGen, version 1.1 (10/7/2009)
+Written by: Justin Lemkul
+
+============================================
+I. Introduction
+============================================
+
+TopolGen is a Perl script that produces a Gromacs-formatted topology from a PDB file.  The requirements are the following:
+
+1.  A syntactically-correct, all-atom (yes, even H) PDB file, with atoms listed as HETATM records.  
+2.  CONECT records within the PDB file.  
+3.  Perl interpreter installed on your system.
+
+Since TopolGen requires an all-atom structure, it is thus far only compatible with the OPLS-AA force field in the standard Gromacs distribution.
+
+Correct syntax for the PDB atomic entries (all these fields MUST be present):
+
+HETATM    1  CAA MOL     1       0.420   2.540   0.000  1.00 20.00             C
+record  at# atom res  res#	 x-crd   y-crd   z-crd   occ  beta       element 
+
+If chain identifiers are present, TopolGen can handle them, as well.
+
+
+============================================
+II. Usage
+============================================
+
+There is no installation process necessary.  To execute TopolGen:
+
+perl topolgen.pl -f input.pdb -o output.top [-type itp/top] [-renumber]
+
+The -renumber flag is optional; only use it if you want to renumber the atoms in the structure file.  Output name is also optional; a default name is specified within the script.
+
+The -type flag is also optional; the type chosen must be consistent with the output filename.  If omitted, the default value of "top" is assigned and the output will be in .top format.
+
+To print help information, use the -h flag.
+
+The main advantage to TopolGen (and the reason it was developed) was to make use of the CONECT records in the PDB file to determine bonds.  Out of the bond determination, angles, dihedrals, and impropers can be determined as well.
+
+TopolGen makes an effort to assign atom types and charges to the constituent atoms of the molecule, and places atoms within charge groups of reasonable size.  The validity of these assignments is not guaranteed.  Always validate the parameters produced by the script before using them in any simulation.
+
+
+============================================
+III. License
+============================================
+
+TopolGen is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+Questions?  Comments?  Bug reports?  Please email me at: jalemkul[at]vt[dot]edu
+
+
+============================================
+IV. New features since version 1.0
+============================================
+
+1. Made command line options into a hash, requiring flags
+2. Added printing of atom labels to bonded parameters sections
+3. Added renumbering option
+4. Added compatibility with chain identifiers and notes about atom type field
+5. Primitive atom type and charge assignment
+6. Separate charge groups now generated
+7. Proper dihedrals no longer (erroneously) generated for amides (O-C-N-H, C-C-N-H have no proper)
+8. Added ability to produce either a .top or .itp
+9. Improved documentation
+
+
+============================================
+V. Bugs and to-do's
+============================================
+
+1. Verify improper dihedrals - thus far the test molecules have worked successfully, but improper assignment is a bit of a hack at the moment.  Please verify the accuracy of your impropers (as well as all of the other parameters) before trusting the topology.
+
