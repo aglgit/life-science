@@ -1,11 +1,13 @@
 set -e
 
-L=2.3
+L=5.0
 NMOL=10
 
 cd run/
+cp ../topol.top topol.top
 gmx insert-molecules -ci ../24SOX.pdb -o box.gro -box $L $L $L -nmol $NMOL
-gmx grompp -f ../mdp/min.mdp -c box.gro -p ../topol.top -o min.tpr
-# gmx genion -s min.tpr -o conf.gro -p min.top -neutral
+gmx solvate -cp box.gro -o box_water.gro -cs tip4p -p topol.top
+gmx grompp -f ../mdp/min.mdp -p topol.top -c box_water.gro
+gmx genion -s topol.tpr -o box_water.gro -p topol.top -neutral
+gmx grompp -c box_water.gro -p topol.top -f ../mdp/min.mdp -o min.tpr
 gmx mdrun -deffnm min
-cd ../
