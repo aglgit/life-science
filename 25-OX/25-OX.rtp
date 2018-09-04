@@ -1,0 +1,201 @@
+; 24Shydroxycholesterol-Girard-T
+[ bondedtypes ]
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
+  1      1       3          1         1             3      1    0
+
+[ SOX ]
+[ atoms ]
+; type        atom   charge molecule
+  CDD     opls_135   -0.180     1
+  CBB     opls_137   -0.060     1    
+  CCC     opls_135   -0.180     1    
+  CAA     opls_158    0.205     1    
+  HAA     opls_140    0.060     1    
+   OB     opls_154   -0.683     1    
+   CZ     opls_136   -0.120     1    
+   CY     opls_136   -0.120     1   
+   CW     opls_137   -0.060     1   
+   HW     opls_140    0.060     1   
+   CX     opls_135   -0.180     1   
+   CK     opls_137   -0.060     1   
+   HK     opls_140    0.060     1   
+   CL     opls_136   -0.120     1   
+   CM     opls_136   -0.120     1   
+   CN     opls_137   -0.060     1   
+   CO     opls_137   -0.060     1   
+   CP     opls_136   -0.120     1   
+   CQ     opls_136   -0.120     1   
+   CR     opls_141    0.000     1   
+   CS     opls_150   -0.115     1   
+   CA     opls_178    0.000     1   
+   NA     opls_348    0.100     1
+   NB     opls_238   -0.400     1
+   CT     opls_235    0.500     1   
+   OA     opls_236   -0.500     1   
+   CU     opls_136   -0.120     1   
+   NC     opls_103    0.070     1
+  CEE     opls_291    0.130     1   
+  CFF     opls_291    0.130     1   
+  CGG     opls_291    0.130     1   
+   CB     opls_136   -0.120     1   
+   CC     opls_136   -0.120     1   
+   CD     opls_139    0.000     1   
+   CE     opls_135   -0.180     1   
+   CF     opls_137   -0.060     1   
+   CG     opls_136   -0.120     1   
+   CH     opls_136   -0.120     1   
+   CI     opls_139    0.000     1   
+   CJ     opls_135   -0.180     1   
+  HD1     opls_140    0.060     1   
+  HD2     opls_140    0.060     1   
+  HD3     opls_140    0.060     1   
+  HBB     opls_140    0.060     1   
+  HC3     opls_140    0.060     1   
+  HC4     opls_140    0.060     1   
+  HC5     opls_140    0.060     1   
+  HOB     opls_155    0.418     1   
+  HZ1     opls_140    0.060     1   
+  HZ2     opls_140    0.060     1   
+  HY1     opls_140    0.060     1   
+  HY2     opls_140    0.060     1   
+  HX1     opls_140    0.060     1   
+  HX2     opls_140    0.060     1   
+  HX3     opls_140    0.060     1   
+  HL1     opls_140    0.060     1   
+  HL2     opls_140    0.060     1   
+  HM1     opls_140    0.060     1   
+  HM2     opls_140    0.060     1   
+   HN     opls_140    0.060     1   
+   HO     opls_140    0.060     1   
+  HP1     opls_140    0.060     1   
+  HP2     opls_140    0.060     1   
+  HQ1     opls_140    0.060     1   
+  HQ2     opls_140    0.060     1   
+   HS     opls_144    0.115     1   
+  HNB     opls_241    0.300     1   
+  HU1     opls_140    0.060     1   
+  HU2     opls_140    0.060     1   
+  HE4     opls_140    0.060     1   
+  HE5     opls_140    0.060     1   
+  HE6     opls_140    0.060     1   
+  HF2     opls_140    0.060     1   
+  HF3     opls_140    0.060     1   
+  HF4     opls_140    0.060     1   
+  HG3     opls_140    0.060     1   
+  HG4     opls_140    0.060     1   
+  HG5     opls_140    0.060     1   
+  HB1     opls_140    0.060     1   
+  HB2     opls_140    0.060     1   
+  HC1     opls_140    0.060     1   
+  HC2     opls_140    0.060     1   
+  HE1     opls_140    0.060     1   
+  HE2     opls_140    0.060     1   
+  HE3     opls_140    0.060     1   
+   HF     opls_140    0.060     1   
+  HG1     opls_140    0.060     1   
+  HG2     opls_140    0.060     1   
+  HH1     opls_140    0.060     1   
+  HH2     opls_140    0.060     1   
+  HJ1     opls_140    0.060     1   
+  HJ2     opls_140    0.060     1 
+  HJ3     opls_140    0.060     1
+
+[ bonds ]
+;  ai    aj funct
+    1     2     1	;   CDD   CBB
+    1    41     1	;   CDD   HD1
+    1    42     1	;   CDD   HD2
+    1    43     1	;   CDD   HD3
+    2     3     1	;   CBB   CCC
+    2     4     1	;   CBB   CAA
+    2    44     1	;   CBB   HBB
+    3    45     1	;   CCC   HC3
+    3    46     1	;   CCC   HC4
+    3    47     1	;   CCC   HC5
+    4     5     1	;   CAA   HAA
+    4     6     1	;   CAA    OB
+    4     7     1	;   CAA    CZ
+    6    48     1	;    OB   HOB
+    7     8     1	;    CZ    CY
+    7    49     1	;    CZ   HZ1
+    7    50     1	;    CZ   HZ2
+    8     9     1	;    CY    CW
+    8    51     1	;    CY   HY1
+    8    52     1	;    CY   HY2
+    9    10     1	;    CW    HW
+    9    11     1	;    CW    CX
+    9    12     1	;    CW    CK
+   11    53     1	;    CX   HX1
+   11    54     1	;    CX   HX2
+   11    55     1	;    CX   HX3
+   12    13     1	;    CK    HK
+   12    14     1	;    CK    CL
+   12    39     1	;    CK    CI
+   14    15     1	;    CL    CM
+   14    56     1	;    CL   HL1
+   14    57     1	;    CL   HL2
+   15    16     1	;    CM    CN
+   15    58     1	;    CM   HM1
+   15    59     1	;    CM   HM2
+   16    17     1	;    CN    CO
+   16    39     1	;    CN    CI
+   16    60     1	;    CN    HN
+   17    18     1	;    CO    CP
+   17    36     1	;    CO    CF
+   17    61     1	;    CO    HO
+   18    19     1	;    CP    CQ
+   18    62     1	;    CP   HP1
+   18    63     1	;    CP   HP2
+   19    20     1	;    CQ    CR
+   19    64     1	;    CQ   HQ1
+   19    65     1	;    CQ   HQ2
+   20    21     1	;    CR    CS
+   20    34     1	;    CR    CD
+   21    22     1	;    CS    CA
+   21    66     1	;    CS    HS
+   22    23     1	;    CA    NA
+   22    32     1	;    CA    CB
+   23    24     1	;    NA    NB
+   24    25     1	;    NB    CT
+   24    67     1	;    NB   HNB
+   25    26     1	;    CT    OA
+   25    27     1	;    CT    CU
+   27    28     1	;    CU    NC
+   27    68     1	;    CU   HU1
+   27    69     1	;    CU   HU2
+   28    29     1	;    NC   CEE
+   28    30     1	;    NC   CFF
+   28    31     1	;    NC   CGG
+   29    70     1	;   CEE   HE4
+   29    71     1	;   CEE   HE5
+   29    72     1	;   CEE   HE6
+   30    73     1	;   CFF   HF2
+   30    74     1	;   CFF   HF3
+   30    75     1	;   CFF   HF4
+   31    76     1	;   CGG   HG3
+   31    77     1	;   CGG   HG4
+   31    78     1	;   CGG   HG5
+   32    33     1	;    CB    CC
+   32    79     1	;    CB   HB1
+   32    80     1	;    CB   HB2
+   33    34     1	;    CC    CD
+   33    81     1	;    CC   HC1
+   33    82     1	;    CC   HC2
+   34    35     1	;    CD    CE
+   34    36     1	;    CD    CF
+   35    83     1	;    CE   HE1
+   35    84     1	;    CE   HE2
+   35    85     1	;    CE   HE3
+   36    37     1	;    CF    CG
+   36    86     1	;    CF    HF
+   37    38     1	;    CG    CH
+   37    87     1	;    CG   HG1
+   37    88     1	;    CG   HG2
+   38    39     1	;    CH    CI
+   38    89     1	;    CH   HH1
+   38    90     1	;    CH   HH2
+   39    40     1	;    CI    CJ
+   40    91     1	;    CJ   HJ1
+   40    92     1	;    CJ   HJ2
+   40    93     1	;    CJ   HJ3
+

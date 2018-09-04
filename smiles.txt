@@ -1,0 +1,8 @@
+24Shydroxycholesterol-Girard-T:
+C(C)C(O)CCC(C)C1CCC2C3CCC4=C\C(CCC4(C)C3CCC12C)=N/NC(=O)C[N+](C)(C)C
+
+25-hydroxycholesterol-Girard-T:
+CC(CCCC(C)(C)O)C1CCC2C3CCC4=C\C(CCC4(C)C3CCC12C)=N/NC(=O)C[N+](C)(C)C
+
+27-hydroxycholesterol-Girard-T:
+CC(CO)CCCC(C)C1CCC2C3CCC4=C\C(CCC4(C)C3CCC12C)=N/NC(=O)C[N+](C)(C)C

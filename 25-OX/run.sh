@@ -7,7 +7,7 @@ mkdir -p run/
 cd run/
 cp ../topol.top topol.top
 
-gmx insert-molecules -ci ../24SOX.pdb -o box.gro -box $L $L $L -nmol $NMOL
+gmx insert-molecules -ci ../25-OX.pdb -o box.gro -box $L $L $L -nmol $NMOL
 gmx solvate -cp box.gro -o box_water.gro -cs tip4p -p topol.top
 
 gmx grompp -f ../mdp/min.mdp -p topol.top -c box_water.gro

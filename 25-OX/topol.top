@@ -1,13 +1,13 @@
 #include "oplsaa.ff/forcefield.itp"
 #include "../girardt.itp"
-#include "../24SOX.itp"
+#include "../25-OX.itp"
 #include "oplsaa.ff/tip4p.itp"
 #include "oplsaa.ff/ions.itp"
 
 [ system ]
 ; Name
-24SOX liquid box in water
+25-OX liquid box in water
 
 [ molecules ]
 ; Compound        #mols
-SOX                  1
+5OX                  1
