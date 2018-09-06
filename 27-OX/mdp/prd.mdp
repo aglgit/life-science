@@ -1,10 +1,10 @@
 integrator               = md        
-dt                       = 0.002     ; 2 fs
-nsteps                   = 50000     ; 10.0 ns
+dt                       = 0.002
+nsteps                   = 50000
 
-nstenergy                = 5000
-nstlog                   = 5000
-nstxout-compressed       = 2000
+nstenergy                = 500
+nstlog                   = 500
+nstxout-compressed       = 1000
 
 continuation             = yes
 constraint-algorithm     = lincs

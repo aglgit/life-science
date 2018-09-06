@@ -21,3 +21,5 @@ gmx mdrun -deffnm eql
 
 gmx grompp -c box_water.gro -p topol.top -f ../mdp/prd.mdp -o prd.tpr
 gmx mdrun -deffnm prd
+
+gmx trjconv -f prd.xtc -s prd.tpr -pbc mol -o prd-mol.xtc

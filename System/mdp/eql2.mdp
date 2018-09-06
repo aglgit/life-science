@@ -1,10 +1,9 @@
-
 integrator               = md        
 dt                       = 0.002
 nsteps                   = 10000
 
 nstenergy                = 500
-nstlog                   = 5000
+nstlog                   = 500
 nstxout-compressed       = 1000
 
 continuation             = yes
@@ -30,3 +29,4 @@ pcoupl                   = Parrinello-Rahman
 tau_p                    = 2.0
 compressibility          = 4.46e-5
 ref_p                    = 1.0 
+
