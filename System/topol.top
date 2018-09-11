@@ -11,10 +11,7 @@
 
 [ molecules ]
 ; Compound        #mols
-SOL                3071
-NA                    2
-CL                    2
+SOL                3025
 C12                  90
-CL                    7
-NA                    7
-SOX                  10
+CL                    1
+SOX                   1

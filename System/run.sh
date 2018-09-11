@@ -1,6 +1,5 @@
 set -e
 
-L=10.0
 NMOL=10
 
 mkdir -p run/
@@ -19,8 +18,8 @@ gmx mdrun -deffnm min
 gmx grompp -c box.gro -p topol.top -f ../mdp/eql.mdp -o eql.tpr
 gmx mdrun -deffnm eql 
 
-gmx grompp -c box.gro -p topol.top -f ../mdp/eql2.mdp -o eql.tpr
-gmx mdrun -deffnm eql 
+gmx grompp -c box.gro -p topol.top -f ../mdp/eql2.mdp -o eql2.tpr
+gmx mdrun -deffnm eql2
 
 gmx grompp -c box.gro -p topol.top -f ../mdp/prd.mdp -o prd.tpr
 gmx mdrun -deffnm prd 

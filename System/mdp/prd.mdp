@@ -26,7 +26,12 @@ ref-t                    = 298.15
 nhchainlength            = 1
 
 pcoupl                   = Parrinello-Rahman 
-tau_p                    = 2.0
-compressibility          = 4.46e-5
-ref_p                    = 1.0 
+pcoupltype               = semiisotropic
+tau_p                    = 2.0 2.0
+compressibility          = 4.46e-5 4.46e-5
+ref_p                    = 1.0 1.0
 
+pbc                      = xy
+ns-type                  = grid
+nwall                    = 2
+wall_atomtype            = opls_
