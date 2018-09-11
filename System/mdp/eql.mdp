@@ -28,16 +28,9 @@ tcoupl                   = Berendsen
 tc-grps                  = System
 tau-t                    = 2.0
 ref-t                    = 298.15 
-;nhchainlength            = 1
+
 annealing                = single
-annealing-npoints         = 3 
+annealing-npoints        = 3 
 annealing-time           = 0 2 5  
 annealing-temp           = 50 100 298.15
-
-
-;pcoupl                   = Parrinello-Rahman 
-;pcoupltype               = semiisotropic
-;tau_p                    = 2.0 2.0
-;compressibility          = 4.46e-5 4.46e-5
-;ref_p                    = 1.0 1.0
 

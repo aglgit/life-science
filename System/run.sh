@@ -1,25 +1,20 @@
 set -e
 
-NMOL=10
-
 mkdir -p run/
 cd run/
 cp ../topol.top topol.top
+cp ../index.ndx index.ndx
 
-gmx editconf -f ../ch3_thr_nopep.pdb -o box.gro -c -d 1.0 -bt cubic
-gmx insert-molecules -ci ../../24SOX/24SOX.pdb -o box.gro -f box.gro -nmol $NMOL
+gmx editconf -f ../system.pdb -o box.gro -box 4.33 4.50 6.5
 
-gmx grompp -f ../mdp/min.mdp -p topol.top -c box.gro
-gmx genion -s topol.tpr -o box.gro -p topol.top -neutral
+gmx grompp -c box.gro -p topol.top -f ../mdp/min.mdp -o min.tpr -n index.ndx
+gmx mdrun -deffnm min
 
-gmx grompp -c box.gro -p topol.top -f ../mdp/min.mdp -o min.tpr
-gmx mdrun -deffnm min 
+gmx grompp -c min.gro -p topol.top -f ../mdp/eql.mdp -o eql.tpr -n index.ndx
+gmx mdrun -deffnm eql
 
-gmx grompp -c box.gro -p topol.top -f ../mdp/eql.mdp -o eql.tpr
-gmx mdrun -deffnm eql 
+gmx grompp -c eql.gro -p topol.top -f ../mdp/prd.mdp -o prd.tpr -n index.ndx
+gmx mdrun -deffnm prd
 
-gmx grompp -c box.gro -p topol.top -f ../mdp/eql2.mdp -o eql2.tpr
-gmx mdrun -deffnm eql2
+gmx trjconv -f prd.xtc -s prd.tpr -pbc mol -o prd-mol.xtc
 
-gmx grompp -c box.gro -p topol.top -f ../mdp/prd.mdp -o prd.tpr
-gmx mdrun -deffnm prd 
