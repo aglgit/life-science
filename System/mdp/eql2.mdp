@@ -9,12 +9,8 @@ nstxout-compressed       = 1000
 constraint-algorithm     = lincs
 constraints              = h-bonds
 
-gen-vel                  = yes
-gen-temp                 = 50
-
 freezegrps               = SH
 freezedim                = Y Y Y 
-
 cutoff-scheme            = Verlet
 
 coulombtype              = PME
@@ -34,10 +30,9 @@ annealing-npoints         = 3
 annealing-time           = 0 2 5  
 annealing-temp           = 50 100 298 
 
-
 ;pcoupl                   = Parrinello-Rahman 
 ;pcoupltype               = semiisotropic
 ;tau_p                    = 2.0 2.0
-;compressibility          = 4.46e-5 4.46e-5
+,compressibility          = 4.46e-5 4.46e-5
 ;ref_p                    = 1.0 1.0
 
