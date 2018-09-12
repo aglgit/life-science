@@ -1,6 +1,6 @@
 integrator               = md        
 dt                       = 0.002
-nsteps                   = 50000
+nsteps                   = 10000
 
 nstenergy                = 500
 nstlog                   = 500
@@ -33,4 +33,14 @@ annealing                = single
 annealing-npoints        = 4
 annealing-time           = 0 2 5 10
 annealing-temp           = 50 100 200 298.15
+
+pull                     = constraint
+pull-geometry            = distance
+pull-ncoords             = 1
+pull-ngroups             = 2
+pull-group1-name         = SOX
+pull-group2-name         = SH
+pull-dim                 = N N Y
+pull-coord1-groups       = 1 2
+pull-start               = yes
 
