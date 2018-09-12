@@ -30,7 +30,7 @@ tau-t                    = 2.0
 ref-t                    = 298.15 
 
 annealing                = single
-annealing-npoints        = 3 
-annealing-time           = 0 2 5  
-annealing-temp           = 50 100 298.15
+annealing-npoints        = 4
+annealing-time           = 0 2 5 10
+annealing-temp           = 50 100 200 298.15
 

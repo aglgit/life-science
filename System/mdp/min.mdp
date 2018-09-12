@@ -1,6 +1,6 @@
 define                   = -DFLEXIBLE
 integrator               = steep
-nsteps                   = 10000
+nsteps                   = 50000
 
 nstenergy                = 500
 nstlog                   = 500
@@ -20,3 +20,4 @@ DispCorr                 = EnerPres
 
 freezegrps               = SH
 freezedim                = Y Y Y
+
