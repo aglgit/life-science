@@ -1,0 +1,18 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "../../top/girardt.itp"
+#include "../../top/24SOX.itp"
+#include "../../top/C12.itp"
+#include "oplsaa.ff/tip3p.itp"
+#include "oplsaa.ff/ions.itp"
+
+[ system ]
+; Name
+24SOX + C12 box in water
+
+[ molecules ]
+; Compound        #mols
+SOX                   1
+SOL                3025
+CL                    1
+C12                  90
+
