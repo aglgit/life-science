@@ -13,19 +13,20 @@
 #
 #################################################
 
+mkdir -p confs/
 cd run/
 
 echo 0 | gmx trjconv -s pull_prd.tpr -f pull_prd.xtc -o ../confs/conf.gro -sep
 
 # compute distances
-for (( i=0; i<201; i++ ))
+for (( i=0; i<151; i++ ))
 do
     gmx distance -s pull_prd.tpr -f ../confs/conf${i}.gro -n index.ndx -select 'com of group "SOX" plus com of group "Surface_Carbon"' -oall dist${i}.xvg 
 done
 
 # compile summary
 > ../confs/summary_distances.dat
-for (( i=0; i<201; i++ ))
+for (( i=0; i<151; i++ ))
 do
     d=`tail -n 1 dist${i}.xvg | awk '{print $2}'`
     echo "${i} ${d}" >> ../confs/summary_distances.dat
