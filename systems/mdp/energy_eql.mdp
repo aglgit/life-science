@@ -35,13 +35,14 @@ annealing-npoints        = 4
 annealing-time           = 0 2 5 10
 annealing-temp           = 50 100 200 298.15
 
-pull                     = constraint
-pull-geometry            = distance
-pull-ncoords             = 1
-pull-ngroups             = 2
-pull-group1-name         = SOX
-pull-group2-name         = Surface_Carbon
-pull-coord1-groups       = 1 2
-pull-dim                 = N N Y
-pull-start               = yes
+pull			 = yes
+pull_ncoords		 = 1
+pull_ngroups 		 = 2
+pull_group1_name	 = SOX
+pull_group2_name	 = Surface_Carbon
+pull_coord1_type	 = constraint
+pull_coord1_geometry	 = distance
+pull_coord1_dim		 = N N Y
+pull_coord1_groups	 = 1 2
+pull_coord1_start 	 = yes
 
