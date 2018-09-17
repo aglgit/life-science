@@ -1,7 +1,7 @@
 #include "oplsaa.ff/forcefield.itp"
-#include "../../top/girardt.itp"
-#include "../../top/24SOX.itp"
-#include "../../top/C12.itp"
+#include "../../../top/girardt.itp"
+#include "../../../top/24SOX.itp"
+#include "../../../top/C12.itp"
 #include "oplsaa.ff/tip3p.itp"
 #include "oplsaa.ff/ions.itp"
 
