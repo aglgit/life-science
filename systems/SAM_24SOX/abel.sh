@@ -1,6 +1,8 @@
 #!/bin/bash
 
-#SBATCH --job-name=CONF150
+CONF=$1
+
+#SBATCH --job-name=$CONF
 #SBATCH --account=nn4654k
 #SBATCH --time=05:30:00
 #SBATCH --mem-per-cpu=2G
@@ -11,5 +13,5 @@ source /cluster/bin/jobsetup
 
 # Run job
 module load gromacs
-./run_conf.sh conf150
+./run_conf.sh $CONF
 
