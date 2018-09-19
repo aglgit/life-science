@@ -40,5 +40,5 @@ pull-coord1-groups       = 1 2
 pull-coord1-dim          = N N Y
 pull-coord1-rate         = -0.01
 pull-coord1-k            = 100
-pull-start               = yes
+pull-coord1-start        = yes
 

@@ -6,7 +6,7 @@ declare -a arr=("conf0" "conf1"
 
 for i in "${arr[@]}"
 do
-   echo "./abel.sh $i"
+   echo "sbatch abel.sh $i"
 done
 
 exit 1
