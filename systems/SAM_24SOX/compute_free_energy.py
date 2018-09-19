@@ -37,12 +37,11 @@ for i, file in enumerate(ordered_files):
         mean_pos[i] = df['pos'].mean()
         std_pos[i] = df['pos'].std()
 
-
-plt.errorbar(mean_pos, mean_force, xerr=None, yerr=std_force)
+plt.errorbar(mean_pos, mean_force, xerr=None, yerr=None)
 plt.title(r'$\langle \frac{dA}{dx} \rangle$')
 plt.xlabel('distance from surface [nm]')
 plt.ylabel('restraint force [kJ/mol/nm]')
 plt.show()
 
 free_energy = simps(mean_force, mean_pos)
-print(free_energy)
+

@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 CONF=$1
 
@@ -14,4 +15,6 @@ source /cluster/bin/jobsetup
 # Run job
 module load gromacs
 ./run_conf.sh $CONF
+
+exit 1
 
