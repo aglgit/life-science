@@ -1,0 +1,18 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "../../../top/girardt.itp"
+#include "../../../top/25-OX.itp"
+#include "../../../top/C12.itp"
+#include "oplsaa.ff/tip3p.itp"
+#include "oplsaa.ff/ions.itp"
+
+[ system ]
+; Name
+25-OX + C12 box in water
+
+[ molecules ]
+; Compound        #mols
+5OX                   1
+SOL                3027
+CL                    1
+C12                  90
+
