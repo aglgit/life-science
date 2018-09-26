@@ -1,0 +1,38 @@
+# This file was created Wed Sep 26 13:19:53 2018
+# Created by:
+#                  :-) GROMACS - gmx cluster, VERSION 5.1.4 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Command line:
+#   gmx cluster -f ../run/conf60_prd.xtc -s conf60_prd.tpr -n index.ndx -method jarvis-patrick -cutoff 0.5 -cl -sz
+# gmx cluster is part of G R O M A C S:
+#
+# GROningen MAchine for Chemical Simulation
+#
+@    title "Cluster Sizes"
+@    xaxis  label "Cluster #"
+@    yaxis  label "# Structures"
+@TYPE xy
+@g0 type bar
+       1      290
+       2        1
+       3        6
+       4       68
+       5        1
+       6        1
+       7      172
+       8        1
+       9        1
+      10        1
+      11        8
+      12        1
+      13        1
+      14      261
+      15      170
+      16        1
+      17        1
+      18        1
+      19       13
+      20        1
+      21        1
