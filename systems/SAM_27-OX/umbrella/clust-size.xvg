@@ -1,38 +1,46 @@
-# This file was created Wed Sep 26 13:19:53 2018
+# This file was created Thu Sep 27 11:08:48 2018
 # Created by:
 #                  :-) GROMACS - gmx cluster, VERSION 5.1.4 (-:
 # 
 # Executable:   /usr/local/gromacs/bin/gmx
 # Data prefix:  /usr/local/gromacs
 # Command line:
-#   gmx cluster -f ../run/conf60_prd.xtc -s conf60_prd.tpr -n index.ndx -method jarvis-patrick -cutoff 0.5 -cl -sz
+#   gmx cluster -f ../run/conf70_prd.xtc -s conf70_prd.tpr -n index.ndx -method jarvis-patrick -cutoff 0.5 -cl -sz
 # gmx cluster is part of G R O M A C S:
 #
-# GROningen MAchine for Chemical Simulation
+# Great Red Owns Many ACres of Sand 
 #
 @    title "Cluster Sizes"
 @    xaxis  label "Cluster #"
 @    yaxis  label "# Structures"
 @TYPE xy
 @g0 type bar
-       1      290
-       2        1
-       3        6
-       4       68
+       1      818
+       2        2
+       3      149
+       4        1
        5        1
        6        1
-       7      172
+       7        1
        8        1
        9        1
       10        1
-      11        8
+      11        1
       12        1
       13        1
-      14      261
-      15      170
-      16        1
+      14        5
+      15        1
+      16        2
       17        1
       18        1
-      19       13
+      19        1
       20        1
       21        1
+      22        1
+      23        1
+      24        1
+      25        2
+      26        1
+      27        1
+      28        1
+      29        1

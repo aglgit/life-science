@@ -18,7 +18,7 @@ def read_xvg(filename, names):
 
         return df
 
-zeros = [-46, -5, -4]
+zeros = [-47.0, -5.0, -4.5]
 for i, path in enumerate(system_paths):
     df = read_xvg(path, names)
     df[names[1]] -= zeros[i]

@@ -1,4 +1,4 @@
-# This file was created Wed Sep 26 13:15:42 2018
+# This file was created Thu Sep 27 11:07:29 2018
 # Created by:
 #                  :-) GROMACS - gmx cluster, VERSION 5.1.4 (-:
 # 
@@ -8,7 +8,7 @@
 #   gmx cluster -f ../run/conf70_prd.xtc -s conf70_prd.tpr -n index.ndx -method jarvis-patrick -cutoff 0.5 -cl -sz
 # gmx cluster is part of G R O M A C S:
 #
-# GRowing Old MAkes el Chrono Sweat
+# GRoups of Organic Molecules in ACtion for Science
 #
 @    title "Cluster Sizes"
 @    xaxis  label "Cluster #"

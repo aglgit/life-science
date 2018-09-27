@@ -27,6 +27,6 @@ for i, path in enumerate(system_paths):
     plt.plot(df[names[0]], df[names[1]], label='%s, S=%.3f' % (systems[i], entropy))
 plt.xlabel(names[0])
 plt.ylabel(names[1])
-plt.title("Cluster analysis of molecules at surface")
+plt.title("Cluster analysis of molecules at surface, $d_{SH} = 1.8$ nm")
 plt.legend()
 plt.show()
