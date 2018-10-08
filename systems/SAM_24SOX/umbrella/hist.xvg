@@ -1,14 +1,14 @@
-# This file was created Tue Sep 25 16:31:02 2018
+# This file was created Wed Oct  3 14:41:31 2018
 # Created by:
 #                   :-) GROMACS - gmx wham, VERSION 5.1.4 (-:
 # 
 # Executable:   /usr/local/gromacs/bin/gmx
 # Data prefix:  /usr/local/gromacs
 # Command line:
-#   gmx wham -it tpr-files.dat -if pullf-files.dat -o hist
+#   gmx wham -it tpr-files.dat -if pullf-files.dat -o hist -nBootstrap 200
 # gmx wham is part of G R O M A C S:
 #
-# GROtesk MACabre and Sinister
+# Great Red Owns Many ACres of Sand 
 #
 @    title "Umbrella potential"
 @    xaxis  label "\xx\f{} (nm)"

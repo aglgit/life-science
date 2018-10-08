@@ -7,7 +7,7 @@ sns.set()
 
 systems = ['24SOX', '25-OX', '27-OX']
 system_paths = ['../systems/SAM_%s/umbrella/hist.xvg' % s for s in systems]
-names = ['z [nm]', 'PMF [kJ/mol]']
+names = ['z [nm]', 'PMF [$kJ mol^{-1} nm^{-1}$]']
 
 def read_xvg(filename, names):
     with open(filename, 'r') as infile:
@@ -28,4 +28,5 @@ plt.xlabel(names[0])
 plt.ylabel(names[1])
 plt.title('Potential of mean force')
 plt.legend()
+plt.savefig('images/free_energy.png')
 plt.show()

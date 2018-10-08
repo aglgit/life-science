@@ -1,9 +1,11 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 import os
 import re
-from scipy.integrate import simps
+
+sns.set()
 
 files = ['force/%s' % f for f in os.listdir('force') if not f.startswith('.')]
 ordered_files = sorted(files, key=lambda x: (int(re.sub('\D','',x)),x))
@@ -38,10 +40,8 @@ for i, file in enumerate(ordered_files):
         std_pos[i] = df['pos'].std()
 
 plt.errorbar(mean_pos, mean_force, xerr=None, yerr=None)
-plt.title(r'$\langle \frac{dA}{dx} \rangle$')
+plt.title('Average restraint force')
 plt.xlabel('distance from surface [nm]')
 plt.ylabel('restraint force [kJ/mol/nm]')
 plt.show()
-
-free_energy = simps(mean_force, mean_pos)
 
